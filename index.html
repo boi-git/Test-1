@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Weather App</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container" id="weather_bg">
+      <div class="main-container align-container">
+        <div style="width: min-content; margin: 24px">
+          <h1 class="" style="white-space: nowrap">Weather App</h1>
+          <div style="display: flex; justify-content: space-evenly">
+            <p id="current-day" class="day-details">Friday</p>
+            <p id="current-time" class="day-details">7:48am</p>
+          </div>
+        </div>
+
+        <div class="location" style="margin: 24px">
+          <div style="display: flex; flex-direction: column">
+            <div style="display: flex; gap: 6px">
+              <input type="text" class="search-bar" placeholder="Search..." />
+              <button class="button-search label" onclick="getWeather()">
+                Search
+              </button>
+            </div>
+            <div class="" id="weather-info"></div>
+          </div>
+          <div
+            style="
+              display: flex;
+              align-items: center;
+              width: 100%;
+              justify-content: space-evenly;
+            "
+          >
+            <h1 style="font-size: 3em; margin: 0" id="temp">12°</h1>
+            <div class="location-details">
+              <p id="location" style="font-size: 2em">Kuala Lumpur</p>
+              <p id="weather">Sunny</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="main-container height-container">
+        <div class="weather-container" style="margin: 24px">
+          <div class="weather-info weather-detail" id="weather-info">
+            <div class="weather-label">
+              <div class="label">Weather:</div>
+              <div id="description">N/A</div>
+            </div>
+            <div class="weather-label">
+              <div class="label">Humidity:</div>
+              <div id="humidity">N/A</div>
+            </div>
+            <div class="weather-label">
+              <div class="label">Pressure:</div>
+              <div id="pressure">N/A</div>
+            </div>
+            <div class="weather-label">
+              <div class="label">Wind Speed:</div>
+              <div id="wind">N/A</div>
+            </div>
+            <div class="weather-label">
+              <div class="label">Sunrise:</div>
+              <div id="sunrise">N/A</div>
+            </div>
+            <div class="weather-label">
+              <div class="label">Sunset:</div>
+              <div id="sunset">N/A</div>
+            </div>
+          </div>
+        </div>
+        <div class="content-container" style="margin: 24px">
+          <div class="forecast-container"></div>
+        </div>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
